@@ -35,7 +35,7 @@ function draw() {
   rectMode(CENTER);
   background(230);
  
-  setaParaCima();
+
 	//mostre o objeto da classe papel
   groundObject.display();
   dustbinObj.display();
@@ -49,8 +49,8 @@ Body.applyForce(papel.body,papel.body.position,{x:130,y:-145});
 ajuste x e y caso o seu papel não caia na lixeira
 */
 
-function setaParaCima(){
+function keyPressed(){
 	if(keyCode === UP_ARROW) {
-		Matter.Body.applyForce(papelObject.body,papelObject.body.position,{x:130,y:-145});
+		Matter.Body.applyForce(papelObject.body,papelObject.body.position,{x:500,y:-700});
 	}
 }
